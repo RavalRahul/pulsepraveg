@@ -36,9 +36,10 @@ body{
 .cover .header-logo{
 	position: absolute;
 	width: 250px;
-	right: 20px;
+	left: calc(50% - 125px);
 	top: 20px;
 	z-index: 100;
+	display: none;
 }
 
 .cover-round-left{
@@ -456,7 +457,7 @@ body{
 }
 
 #feature-slide-2 .f-title-2{
-	font-size: 6.5rem;
+	font-size: 7vw;
 }
 
 #feature-slide-3{
@@ -472,7 +473,7 @@ body{
 /* ------------------About------------------ */
 
 .about{
-	height: 100vh;
+	/* height: 100vh; */
 	background-color: #0d1528;
 }
 
@@ -606,10 +607,17 @@ body{
 	padding: 30px;
 	line-height: 1.5rem;
 }
+.why .why-body .content-img-1, .why .why-body .content-img-2{
+	display: flex;
+	align-items: center;
+}
 
 .why .why-body .content-img-2{
 	text-align: right;
+	justify-content: end;
 }
+
+
 
 /* --------------- Contact ---------------*/
 
@@ -686,4 +694,155 @@ footer .links h1, footer .address h1{
 
 .copyright .copyright-body i{
 	color: aliceblue;
+}
+
+
+
+
+
+@media only screen and (max-width:1210px) {
+	.container{
+		width: 90%;
+	}
+
+	.feature .feature-background .f-title-1{
+		font-size: 12vw;	
+		margin-top: 20%;
+	}
+	
+	.feature .feature-background .f-title-2{
+		font-size: 10vw;
+	}
+
+	.about .about-left{
+		display: none;
+	}
+
+}
+
+
+@media only screen and (max-width:850px){
+	
+	.feature .feature-background .f-title-1{
+		font-size: 12vw;	
+		margin-top: 40%;
+	}
+	
+	.feature .feature-background .f-title-2{
+		font-size: 10vw;
+	}
+
+
+	.feature .feature-background .triangle-left{
+		left: 0%;
+		right: 65%;
+		top: 20%;
+		bottom: 30%;
+		z-index: 0;
+		background: linear-gradient(360deg, rgba(39,41,78,0) 20%, rgba(53, 70, 144, 0.1) 100%);
+		backdrop-filter: blur(2.5px);
+	
+	}
+	
+	.feature .feature-background .triangle-right{
+		left: 70%;
+		right: -5%;
+		top: 40%;
+		bottom: 10%;
+	}
+	
+	.feature .feature-background .triangle-mid{
+		left: 20%;
+		right: 20%;
+		top: 30%;
+		bottom: 0%;
+		z-index: 2;
+	}
+
+
+	.about .about-right .about-title-2{
+		font-size: 3vw;
+	}
+
+	
+	.why .why-body .content-img-1, .why .why-body .content-img-2{
+		display: none;
+	}
+
+	.why .why-body{
+		grid-template-columns: 100%;
+	}
+
+	.footer-body{
+		grid-template-columns: 100% !important;
+	}
+
+	.footer-body .logo a img{
+		max-width: 300px;
+	}
+
+	.footer-body div{
+		border-bottom: 1px solid rgba(255, 255, 255, 0.225);
+		padding: 20px 0 !important;
+		display: block;
+	}
+
+}
+
+@media only screen and (max-width:700px) {
+	.cover .left-bar{
+		display: none;
+	}
+
+	.cover .title{
+		padding: 0 10%;
+	}
+
+	.cover .header-logo{
+		display: block;
+	}	
+
+	.about .about-title-1{
+		font-size: 1.5rem !important;
+	}
+
+	.about .about-right .about-title-2 span{
+		font-size: 6vw !important;
+	}
+
+	.about .about-cards{
+		display: grid;
+		grid-template-columns: 100%;
+	}
+
+	.about .about-cards .about-card{
+		width: 350px;
+		margin: auto;
+	}
+
+	.why h1{
+		font-size: 1.5rem !important;
+	}
+
+	.why .why-main-desc p{
+		font-size: 1rem !important;
+	}
+	
+
+}
+
+
+@media only screen and (max-width:550px){
+	.feature .feature-background .f-title-1{
+		font-size: 12vw;	
+		margin-top: 60%;
+	}
+	
+	.feature .feature-background .f-title-2{
+		font-size: 10vw;
+	}
+
+	
+
+
 }
